@@ -1,0 +1,13 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Simple scheduling and task creation.",
+  "main": "main.js",
+  "repository": "https://github.com/kuesa/todo",
+  "author": "Noah Grove",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^3.0.2",
+    "jquery": "^3.3.1"
+  }
+}

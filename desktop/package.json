@@ -9,5 +9,10 @@
   "dependencies": {
     "electron": "^3.0.2",
     "jquery": "^3.3.1"
+  },
+  "scripts": {
+    "start": "sass src/index.scss src/index.css && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   }
 }

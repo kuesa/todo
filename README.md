@@ -1,4 +1,4 @@
 ## todo
-Simple scheduling and task creation, made in electron.
+Simple scheduling and task creation.
 
-Currently building for Windows and Android
+Currently building for Windows and Android.

@@ -6,9 +6,15 @@ let mainWindow;
 
 //create initial window
 function createWindow() {
-  mainWindow = new BrowserWindow({ width: 350, height: 640, 'min-width': 260 });
+  mainWindow = new BrowserWindow({
+    width: 350,
+    height: 640,
+    'min-width': 260,
+    titleBarStyle: 'hidden'
+  });
 
-  mainWindow.loadFile('index.html');
+  //mainWindow.loadFile('public/index.html');
+  mainWindow.loadURL('http://localhost:3000'); // DEV MODE
 
   mainWindow.on('closed', function() {
     mainWindow = null;

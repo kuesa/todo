@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import List from '../components/list';
 
 class AppContainer extends React.Component {
@@ -7,3 +6,5 @@ class AppContainer extends React.Component {
     return <List />;
   }
 }
+
+export default AppContainer;

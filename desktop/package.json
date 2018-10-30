@@ -7,12 +7,24 @@
   "author": "Noah Grove",
   "license": "MIT",
   "dependencies": {
+    "concurrently": "^4.0.1",
+    "cross-env": "^5.2.0",
     "electron": "^3.0.2",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-scripts": "^2.0.5",
+    "wait-on": "^3.1.0"
   },
   "scripts": {
-    "start": "sass src/index.scss src/index.css && electron .",
+    "start": "sass src/index.scss src/index.css && concurrently \"cross-env BROWSER=none yarn react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

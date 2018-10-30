@@ -1,0 +1,27 @@
+div {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 8px;
+  padding: 4px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  text-align: center;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+*,
+*::after,
+*::before {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+}

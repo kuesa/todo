@@ -1,1 +1,2 @@
-mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+import React from 'react';
+import ReactDOM from 'react-dom';

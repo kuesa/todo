@@ -6,7 +6,7 @@ let mainWindow;
 
 //create initial window
 function createWindow() {
-  mainWindow = new BrowserWindow({ width: 800, height: 600 });
+  mainWindow = new BrowserWindow({ width: 350, height: 640, 'min-width': 260 });
 
   mainWindow.loadFile('index.html');
 

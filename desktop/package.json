@@ -7,6 +7,8 @@
   "author": "Noah Grove",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^3.3.2",
+    "@material-ui/icons": "^3.0.1",
     "concurrently": "^4.0.1",
     "cross-env": "^5.2.0",
     "electron": "^3.0.2",

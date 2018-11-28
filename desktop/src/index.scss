@@ -1,3 +1,5 @@
+@import '../node_modules/typeface-roboto/index.css';
+
 div {
   text-align: center;
 }
@@ -6,16 +8,48 @@ ul {
   list-style-type: none;
   margin: 8px;
   padding: 4px;
-  border: 1px solid gray;
-  border-radius: 4px;
-  height: 500px;
+  border: none;
+  height: 510px;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   text-align: center;
 
   li {
     cursor: pointer;
   }
+}
+
+.addButton {
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  border: none;
+  background-color: #1b47e5;
+  padding: 6px 8px;
+  color: #f1f1f1;
+
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 12px 0 rgba(0, 0, 0, 0.19);
+}
+
+.addButton:hover {
+  background-color: #0020b2;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  transition-duration: 0.2s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6c73ff;
 }
 
 *,
@@ -24,4 +58,6 @@ ul {
   -webkit-user-select: none;
   -webkit-user-drag: none;
   -webkit-app-region: no-drag;
+
+  font-family: 'Open Sans', sans-serif;
 }

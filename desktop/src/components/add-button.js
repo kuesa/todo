@@ -1,9 +1,16 @@
 import React from 'react';
-import AddCircle from '@material-ui/icons/AddCircle';
 
 class AddButton extends React.Component {
   render() {
-    return <AddCircle className="addButton" onClick={this.props.onClick} />;
+    return (
+      <button
+        class="addButton"
+        className="addButton"
+        onClick={this.props.onClick}
+      >
+        New Task
+      </button>
+    );
   }
 }
 
